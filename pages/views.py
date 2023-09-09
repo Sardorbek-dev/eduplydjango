@@ -32,3 +32,14 @@ class MentorsView(TemplateView):
 
 class MentorDetailView(TemplateView):
     template_name = 'mentor-detail.html'
+
+class EventsView(TemplateView):
+    template_name = 'events.html'
+
+class EventDetailView(TemplateView):
+    template_name = 'event-detail.html'
+
+
+class PageNotFoundView(TemplateView):
+    template_name = 'page-not-found.html'
+

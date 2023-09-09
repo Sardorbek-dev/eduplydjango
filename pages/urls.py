@@ -1,6 +1,7 @@
 from django.urls import path
 from .views import HomePageView, AboutPageView, ContactCreateView, OurServicesView, FaqView, ImprintView,\
-                    DataProtectionView, BecomeMentorView, MentorsView, MentorDetailView
+                    DataProtectionView, BecomeMentorView, MentorsView, MentorDetailView, PageNotFoundView, \
+                    EventsView, EventDetailView
 urlpatterns = [
     path('', HomePageView.as_view(), name='home'),
     path('about', AboutPageView.as_view(), name='about'),
@@ -12,5 +13,8 @@ urlpatterns = [
     path('become-mentor', BecomeMentorView.as_view(), name='become-mentor'),
     path('mentors', MentorsView.as_view(), name='mentors'),
     path('mentor-detail', MentorDetailView.as_view(), name='mentor-detail'),
+    path('events', EventsView.as_view(), name='events'),
+    path('event-detail', EventDetailView.as_view(), name='event-detail'),
+    path('page-not-found', PageNotFoundView.as_view(), name='page-not-found'),
 
 ]
