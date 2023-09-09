@@ -1,0 +1,359 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <!-- start breadcrumb area -->
+    <div class="rts-breadcrumb-area breadcrumb-bg bg_image">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 breadcrumb-1">
+                    <h1 class="title" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">FAQ</h1>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="bread-tag">
+                        <a href="index.html" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">Home</a>
+                        <span> / </span>
+                        <a href="#" class="active" data-sal-delay="450" data-sal="slide-up"
+                            data-sal-duration="800">FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end breadcrumb area -->
+
+    <!-- rts faq area start -->
+    <div class="rts-faq-area-one rts-section-gap">
+        <div class="container">
+            <div class="row g-6 align-items-center">
+                <div class="col-lg-6" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="title-area text-start mb--50">
+                        <span data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">Check Our
+                            Faq</span>
+                        <h2 class="title" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">Your
+                            Questions Answered</h2>
+                    </div>
+                    <!-- accordion area faq -->
+                    <div class="accordion-wrapper-area wrapper-area-inner">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <span>01.</span> How does the mentor matching process work?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Our mentor matching process involves assessing your academic interests, desired
+                                        countries, and preferences. Based on this information, we carefully match you
+                                        with an experienced mentor who can provide guidance and support throughout your
+                                        study abroad journey.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <span>02.</span> Can I apply for multiple academic programs?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Absolutely! We encourage you to explore various academic programs and apply to
+                                        multiple options to maximize your opportunities. Our team can assist you in
+                                        navigating the application process for multiple programs.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <span>03.</span> Are there any scholarship opportunities available?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Yes, we understand the importance of financial support when studying abroad. We
+                                        can help you explore available scholarships, grants, and funding options to make
+                                        your study abroad experience more affordable. Please reach out to us for more
+                                        information.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        <span>04.</span> How long does the mentorship program last?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        The duration of the mentorship program can vary depending on your needs and the
+                                        specific academic program you are pursuing. Some mentorship relationships
+                                        continue throughout the entire study abroad journey, while others may focus on
+                                        specific stages, such as the application process or cultural adaptation. The
+                                        duration will be determined based on your individual circumstances.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- accordion area faq end -->
+                </div>
+                <div class="col-lg-6" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
+                    <div class="thumbnail-faq-h2 thumbnail-faq-inner pr--20">
+                        <img src="{% static 'images/faq/01.jpg' %}" alt="faq_image" data-sal-delay="150" data-sal="slide-up"
+                            data-sal-duration="800">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- rts faq area end -->
+    <!-- testimonials area start -->
+    <div class="rts-testimonials-h2-area rts-section-gap bg_testimonials-h2">
+        <div class="container">
+            <div class="row mb--30">
+                <div class="col-12">
+                    <div class="title-area testimonials-area-h2 text-center">
+                        <span data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">Mentee
+                            Testimonial</span>
+                        <h2 class="title" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">215+
+                            Mentee Feedback’s</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-12">
+                    <!-- Swiper -->
+                    <div class="swiper testimonials-h2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <!-- single testimonials area -->
+                                <div class="single-testimonials-h2">
+                                    <div class="body">
+                                        <h5 class="title">Great Solution and very helpfull</h5>
+                                        <p class="disc">
+                                            “I cannot express enough gratitude for the mentorship program provided by
+                                            EduplyUZ.
+                                            It has been an invaluable resource for me as I navigate my academic journey
+                                            abroad.”
+                                        </p>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="left">
+                                            <a class="thumbnail" href="#"><img src="{% static 'images/testimonials/01.png' %}"
+                                                    alt="testimonials_image"></a>
+                                            <div class="desig">
+                                                <a href="#">
+                                                    <h6 class="title">
+                                                        Jasmine Lemon
+                                                    </h6>
+                                                </a>
+                                                <p>Student at <span>Berlin University</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="stars-area">
+                                                <ul>
+                                                    <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single testimonials area End -->
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- single testimonials area -->
+                                <div class="single-testimonials-h2">
+                                    <div class="body">
+                                        <h5 class="title">Big Thanks!</h5>
+                                        <p class="disc">
+                                            “I cannot express enough gratitude for the mentorship program provided by
+                                            EduplyUZ.
+                                            It has been an invaluable resource for me as I navigate my academic journey
+                                            abroad.”
+                                        </p>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="left">
+                                            <a class="thumbnail" href="#"><img src="{% static 'images/testimonials/02.png' %}"
+                                                    alt="testimonials_image"></a>
+                                            <div class="desig">
+                                                <a href="#">
+                                                    <h6 class="title">
+                                                        Jasmine Lemon
+                                                    </h6>
+                                                </a>
+                                                <p>Student at <span>University of Michigan</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="stars-area">
+                                                <ul>
+                                                    <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single testimonials area End -->
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <!-- swiper end -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- testimonials area end -->
+
+    <!-- our latest news area start -->
+    <div class="rts-blog-area-h2 rts-section-gap">
+        <div class="container">
+            <div class="row mb--30">
+                <div class="col-12">
+                    <div class="title-area-btn-wrapper">
+                        <div class="title-area text-start">
+                            <span data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">Alumni Network</span>
+                            <h2 class="title" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">Events
+                            </h2>
+                        </div>
+                        <a class="rts-btn btn-primary" href="event-list.html">View All Events</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-24">
+                <!-- single blog area -->
+                <div class="col-lg-4">
+                    <div class="blog-single-two-wrapper" data-sal-delay="150" data-sal="slide-up"
+                        data-sal-duration="800">
+                        <a href="event-list.html" class="thumbnail">
+                            <img src="{% static 'images/blog/04.jpg' %}" alt="eduplyUZ_blog">
+                            <span class="badge-one">Event</span>
+                        </a>
+                        <div class="inner">
+                            <div class="admin-area">
+                                <img src="{% static 'images/testimonials/02.png' %}" alt="admin_image">
+                                <div class="details">
+                                    <span>Post by</span>
+                                    <p class="name">
+                                        David Smith
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="body">
+                                <div class="date">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>25 September, 2023</span>
+                                </div>
+                                <a href="event-list.html">
+                                    <h5 class="title">
+                                        Join us for an Exciting Team Event
+                                    </h5>
+                                </a>
+                                <a href="event-list.html" class="rts-read-more">Learn More<i
+                                        class="far fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single blog end -->
+                <!-- single blog area -->
+                <div class="col-lg-4">
+                    <div class="blog-single-two-wrapper" data-sal-delay="250" data-sal="slide-up"
+                        data-sal-duration="800">
+                        <a href="event-list.html" class="thumbnail">
+                            <img src="{% static 'images/blog/05.jpg' %}" alt="eduplyUZ_blog">
+                            <span class="badge-one">Event</span>
+                        </a>
+                        <div class="inner">
+                            <div class="admin-area">
+                                <img src="{% static 'images/testimonials/02.png' %}" alt="admin_image">
+                                <div class="details">
+                                    <span>Post by</span>
+                                    <p class="name">
+                                        David Smith
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="body">
+                                <div class="date">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>15 December, 2023</span>
+                                </div>
+                                <a href="event-list.html">
+                                    <h5 class="title">
+                                        Save the Date for our Upcoming Event!
+                                    </h5>
+                                </a>
+                                <a href="event-list.html" class="rts-read-more">Learn More<i
+                                        class="far fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single blog end -->
+                <!-- single blog area -->
+                <div class="col-lg-4">
+                    <div class="blog-single-two-wrapper" data-sal-delay="350" data-sal="slide-up"
+                        data-sal-duration="800">
+                        <a href="event-list.html" class="thumbnail">
+                            <img src="{% static 'images/blog/06.jpg' %}" alt="eduplyUZ_blog">
+                            <span class="badge-one">Event</span>
+                        </a>
+                        <div class="inner">
+                            <div class="admin-area">
+                                <img src="{% static 'images/testimonials/02.png' %}" alt="admin_image">
+                                <div class="details">
+                                    <span>Post by</span>
+                                    <p class="name">
+                                        David Smith
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="body">
+                                <div class="date">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>25 November, 2024</span>
+                                </div>
+                                <a href="event-list.html">
+                                    <h5 class="title">
+                                        Coming soon...
+                                    </h5>
+                                </a>
+                                <a href="event-list.html" class="rts-read-more">Learn More<i
+                                        class="far fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single blog end -->
+            </div>
+        </div>
+    </div>
+    <!-- our latest news area end -->
+
+
+{% endblock  %}

@@ -1,0 +1,583 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="banner-area bg_image--1 bg_image rts-section-gap">
+        <div class="container shape-line">
+            <div class="row align-items-start pt--100 pt_sm--50 banner-shape-red">
+                <div class="col-lg-6 order-xl-1 order-md-2 order-sm-1 order-1">
+                    <div class="banner-one-content-wrapper">
+                        <span class="pre-title" data-sal-delay="150" data-sal="slide-up"
+                            data-sal-duration="800">Matching & NETWORKING PLATFORM</span>
+                        <h1 class="title-banner" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
+                            Welcome to our Mentor Network
+                        </h1>
+                        <p class="banner-disc" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
+                            At our organization, we believe that studying abroad is a transformative experience that
+                            opens doors to endless opportunities. We are dedicated to supporting students who aspire to
+                            pursue their Bachelor's, Master's, or PhD degrees in foreign countries.
+                        </p>
+                        <div class="banner-wrapper button" data-sal-delay="300" data-sal="slide-up"
+                            data-sal-duration="800">
+                            <a href="{% url 'contact' %}" class="rts-btn btn-primary">Get Started</a>
+
+                            <!-- <a href="https://www.youtube.com/embed/KwpA_CvmWV0"
+                                class="btn-watch-video fancybox fancybox.iframe ml--25">
+                                <span class="icon"></span>
+                                <span class="text">Play Video</span>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-xl-2">
+                    <div class="banner-shape-area-one">
+                        <img src="{% static 'images/banner/shape/01.png' %}" alt="banner_shape" data-sal-delay="200"
+                            data-sal="zoom-in" data-sal-duration="1000">
+                    </div>
+                    <div class="banner-thumb-1 banner-shape-one">
+                        <img src="{% static  'images/banner/01.png' %}" alt="Creative_banner" data-sal-delay="200"
+                            data-sal="zoom-in" data-sal-duration="1000">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!-- our working process area start -->
+    <div class="rts-working-process-area rts-section-gap">
+        <div class="container">
+            <div class="row mb--30">
+                <div class="col-12">
+                    <div class="title-area text-center">
+                        <span data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">How We Work</span>
+                        <h3 class="title" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">Our Work
+                            Process</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="single-working-process-one">
+                        <div class="inner text-center" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                            <img class="logo" src="{% static  'images/working-process/logo/01.svg' %}" alt="process-logo">
+                            <h5 class="title">
+                                #1 Application and Screening
+                            </h5>
+                            <p class="disc mt-4">
+                                Prospective mentors and mentees complete an application form. Applications are carefully
+                                reviewed based on criteria such as qualifications and commitment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="single-working-process-one">
+                        <div class="inner text-center" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
+                            <img class="logo" src="{% static  'images/working-process/logo/02.svg' %}" alt="process-logo">
+                            <h5 class="title">
+                                #2 Matching Process
+                            </h5>
+                            <p class="disc mt-4">
+                                Mentees are matched with suitable mentors based on their interests and desired
+                                countries.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="single-working-process-one">
+                        <div class="inner text-center" data-sal-delay="350" data-sal="slide-up" data-sal-duration="800">
+                            <img class="logo" src="{% static  'images/working-process/logo/03.svg' %}" alt="process-logo">
+                            <h5 class="title">
+                                #3 Ongoing Mentorship
+                            </h5>
+                            <p class="disc mt-4">
+                                Mentors provide guidance throughout the journey, assisting with program selection,
+                                applications, and cultural adaptation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="single-working-process-one">
+                        <div class="inner text-center" data-sal-delay="450" data-sal="slide-up" data-sal-duration="800">
+                            <img class="logo" src="{% static  'images/working-process/logo/04.svg' %}" alt="process-logo">
+                            <h5 class="title">
+                                #4 Regular Check-ins
+                            </h5>
+                            <p class="disc mt-4">
+                                Scheduled check-ins monitor progress, address challenges, and celebrate achievements.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="single-working-process-one">
+                        <div class="inner text-center" data-sal-delay="450" data-sal="slide-up" data-sal-duration="800">
+                            <div class="bg-icon-svg">
+                                <img class="logo" src="{% static  'images/working-process/logo/support.jpg' %}"
+                                    alt="process-logo">
+                            </div>
+                            <h5 class="title">
+                                #5 Resources and Support
+                            </h5>
+                            <p class="disc mt-4">
+                                Informative resources, including articles and workshops, are provided to support mentors
+                                and mentees.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="single-working-process-one">
+                        <div class="inner text-center" data-sal-delay="450" data-sal="slide-up" data-sal-duration="800">
+                            <div class="bg-icon-svg">
+                                <img class="logo" src="{% static  'images/working-process/logo/engagement.jpg' %}"
+                                    alt="process-logo">
+                            </div>
+                            <h5 class="title">
+                                #6 Evaluation and Engagement
+                            </h5>
+                            <p class="disc mt-4">
+                                Continuous evaluation ensures program effectiveness. Upon completion, mentees can become
+                                mentors themselves, contributing to future student growth.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- our working process area end -->
+
+    <!-- counter up area start -->
+    <div class="counter-up-area ptb--100 counter-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="counter-up-wrapper-one">
+                        <!-- ingle counter -->
+                        <div class="counter-single" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                            <h2 class="title"><span class="counter plus">2</span></h2>
+                            <p class="disc">Years Of Experience</p>
+                        </div>
+                        <!-- single-counter End -->
+                        <!-- ingle counter -->
+                        <div class="counter-single" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
+                            <h2 class="title"><span class="counter">89</span></h2>
+                            <p class="disc">Mentors</p>
+                        </div>
+                        <!-- single-counter End -->
+                        <!-- ingle counter -->
+                        <div class="counter-single" data-sal-delay="350" data-sal="slide-up" data-sal-duration="800">
+                            <h2 class="title"><span class="counter plus">200</span></h2>
+                            <p class="disc">Mentees</p>
+                        </div>
+                        <!-- single-counter End -->
+                        <!-- ingle counter -->
+                        <div class="counter-single" data-sal-delay="450" data-sal="slide-up" data-sal-duration="800">
+                            <h2 class="title"><span class="counter plus">50</span></h2>
+                            <p class="disc">Ongoing Mentorship</p>
+                        </div>
+                        <!-- single-counter End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- counter up area End -->
+
+    <!-- about us area start -->
+    <div class="rts-about-us-area rts-section-gap">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="thumbnail" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                        <img src="{% static  'images/about-us/01.jpg' %}" alt="creative_about">
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="about-right-one-area">
+                        <div class="title-area">
+                            <span data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">More About
+                                Organization</span>
+                            <h3 class="title" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
+                                Empowering Academic Dreams
+                            </h3>
+                        </div>
+                        <p class="disc" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
+                            Our mission is to connect aspiring students with experienced volunteer mentors who can
+                            provide guidance, support, and valuable insights throughout their academic journey.
+                        </p>
+                        <p class="disc" data-sal-delay="300" data-sal="slide-up" data-sal-duration="800">
+                            Join us today and be part of a vibrant community dedicated to transforming lives through
+                            international education!
+                        </p>
+                        <div class="button-area" data-sal-delay="300" data-sal="slide-up" data-sal-duration="800">
+                            <a href="#" class="rts-btn btn-primary">More About Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about us area end -->
+
+    <!-- service-appoinment-area start -->
+    <div class="rts-service-area bg-light rts-section-gap service-bg_shape">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-area text-center">
+                        <span data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">Our Services</span>
+                        <h3 class="title" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">Service We
+                            Provide</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-24 mt--5">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up"
+                    data-sal-duration="800">
+                    <!-- single service area start -->
+                    <div class="rts-single-service-one">
+                        <div class="icon">
+                            <img src="{% static  'images/service/01.svg' %}" alt="eduplyUZ_service">
+                        </div>
+                        <a href="#">
+                            <h5 class="title">
+                                Mentor Matching
+                            </h5>
+                        </a>
+                        <p class="disc">
+                            Connect with experienced mentors for guidance and support throughout your study abroad
+                            journey
+                        </p>
+                    </div>
+                    <!-- single service area end -->
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12" data-sal-delay="250" data-sal="slide-up"
+                    data-sal-duration="800">
+                    <!-- single service area start -->
+                    <div class="rts-single-service-one">
+                        <div class="icon">
+                            <img src="{% static  'images/service/02.svg' %}" alt="eduplyUZ_service">
+                        </div>
+                        <a href="#">
+                            <h5 class="title">
+                                Application Assistance
+                            </h5>
+                        </a>
+                        <p class="disc">
+                            Get expert help with crafting compelling applications that stand out.
+                        </p>
+                    </div>
+                    <!-- single service area end -->
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12" data-sal-delay="350" data-sal="slide-up"
+                    data-sal-duration="800">
+                    <!-- single service area start -->
+                    <div class="rts-single-service-one">
+                        <div class="icon">
+                            <img src="{% static  'images/service/07.svg' %}" alt="eduplyUZ_service">
+                        </div>
+                        <a href="#">
+                            <h5 class="title">
+                                Program Selection
+                            </h5>
+                        </a>
+                        <p class="disc">
+                            Explore options and receive personalized recommendations for the perfect academic fit.
+                        </p>
+                    </div>
+                    <!-- single service area end -->
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12" data-sal-delay="450" data-sal="slide-up"
+                    data-sal-duration="800">
+                    <!-- single service area start -->
+                    <div class="rts-single-service-one">
+                        <div class="icon">
+                            <img src="{% static  'images/service/04.svg' %}" alt="eduplyUZ_service">
+                        </div>
+                        <a href="#">
+                            <h5 class="title">
+                                Scholarships and Funding
+                            </h5>
+                        </a>
+                        <p class="disc mt-4">
+                            Discover available financial support to make studying abroad affordable.
+                        </p>
+                    </div>
+                    <!-- single service area end -->
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up"
+                    data-sal-duration="800">
+                    <!-- single service area start -->
+                    <div class="rts-single-service-one">
+                        <div class="icon">
+                            <img src="{% static  'images/service/icon/11.svg' %}" alt="eduplyUZ_service">
+                        </div>
+                        <a href="#">
+                            <h5 class="title mt--40">
+                                Cultural Adaptation Support
+                            </h5>
+                        </a>
+                        <p class="disc mt-4">
+                            Access resources and advice for a smooth transition to a new country.
+                        </p>
+                    </div>
+                    <!-- single service area end -->
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12" data-sal-delay="250" data-sal="slide-up"
+                    data-sal-duration="800">
+                    <!-- single service area start -->
+                    <div class="rts-single-service-one">
+                        <div class="icon">
+                            <img src="{% static  'images/service/06.svg' %}" alt="eduplyUZ_service">
+                        </div>
+                        <a href="#">
+                            <h5 class="title">
+                                Alumni Network
+                            </h5>
+                        </a>
+                        <p class="disc">
+                            oin a global community of students and mentors for ongoing support and networking.
+                        </p>
+                    </div>
+                    <!-- single service area end -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="appoinment-area-one mt--120 mt_sm--60">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <!-- appoinment left area -->
+                                <div class="appoinment-left">
+                                    <div class="title-area">
+                                        <span data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                                            Get in touch
+                                        </span>
+                                        <h3 class="title" data-sal-delay="250" data-sal="slide-up"
+                                            data-sal-duration="800">
+                                            Do You have
+                                            any questions?
+                                        </h3>
+                                        <p class="disc" data-sal-delay="350" data-sal="slide-up"
+                                            data-sal-duration="800">
+                                            We would love to hear from you! Whether you have questions, feedback, or
+                                            inquiries, our team is here to assist you.
+                                            Please feel free to reach out to us using the contact form.
+                                        </p>
+                                        <div class="communicate-area" data-sal-delay="450" data-sal="slide-up"
+                                            data-sal-duration="800">
+                                            <img src="{% static  'images/appoinment/icon/01.svg' %}" alt="creative_icon">
+                                            <div class="details-area">
+                                                <span>Mail us 24/7:</span>
+                                                <a href="mailto:someone@example.com">eduply.uz@gmail.com</a>
+                                            </div>
+                                        </div>
+                                        <div class="communicate-area mt--30" data-sal-delay="550" data-sal="slide-up"
+                                            data-sal-duration="800">
+                                            <img src="{% static  'images/appoinment/icon/02.svg' %}" alt="creative_icon">
+                                            <div class="details-area">
+                                                <span>For urgent help;</span>
+                                                <a href="tel:+4733378901">+123-456-7890</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- appoinment left area End -->
+                            </div>
+                            <div class="col-lg-6">
+                                <!-- appoinment-right -->
+                                <div class="appoinment-right">
+                                    <form action="#">
+                                        <div class="single-input" data-sal-delay="150" data-sal="slide-up"
+                                            data-sal-duration="800">
+                                            <label for="name">Your Name*</label>
+                                            <input type="text" id="name" required>
+                                        </div>
+                                        <div class="single-input mt--20" data-sal-delay="250" data-sal="slide-up"
+                                            data-sal-duration="800">
+                                            <label for="Email">Your Email*</label>
+                                            <input type="text" id="Email" required>
+                                        </div>
+                                        <div class="single-input mt--20" data-sal-delay="350" data-sal="slide-up"
+                                            data-sal-duration="800">
+                                            <label for="message">How can we help you?</label>
+                                            <textarea id="message"></textarea>
+                                        </div>
+                                        <button class="rts-btn btn-primary mt--30">Submit Now</button>
+                                    </form>
+                                </div>
+                                <!-- appoinment-right End -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="appoinment-shape">
+                        <img class="shape-1 shape" src="{% static  'images/appoinment/shape/01.png' %}" alt="appoinmtnt_shape"
+                            data-sal-delay="250" data-sal="slide-right" data-sal-duration="600">
+                        <img class="shape shape-2" src="{% static  'images/appoinment/shape/02.png' %}" alt="appoinmtnt_shape"
+                            data-sal-delay="150" data-sal="slide-right" data-sal-duration="800">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- service-appoinment-area End -->
+
+    <!-- meet our teams ection start -->
+    <div class="rts-team-area pt_sm--40 rts-section-gap2Bottom padding-top-additional">
+        <div class="container">
+            <div class="row mb--30 mt-dec-40">
+                <div class="col-12">
+                    <div class="title-area digital">
+                        <h3 class="title">Meet The Experts</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-24">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 col-12">
+                    <div class="team-single-digital rts-img-reveal-item" data-subtitle="Founder"
+                        data-title="Taylor Swift" data-fx="1">
+                        <a href="#" class="thumbnail">
+                            <img src="{% static  'images/team/tm/19.jpg' %}" alt="team-area">
+                        </a>
+                        <div class="rts-img-reveal-wrapper">
+                            <div class="rts-img-reveal-wrapper__inner">
+                                <div class="rts-img-reveal-wrapper__img">
+                                    <div class="rts-hover-wrapper">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 col-12">
+                    <div class="team-single-digital rts-img-reveal-item" data-subtitle="CEO" data-title="John Doe"
+                        data-fx="1">
+                        <a href="#" class="thumbnail">
+                            <img src="{% static  'images/team/tm/14.jpg' %}" alt="team-area">
+                        </a>
+                        <div class="rts-img-reveal-wrapper">
+                            <div class="rts-img-reveal-wrapper__inner">
+                                <div class="rts-img-reveal-wrapper__img">
+                                    <div class="rts-hover-wrapper">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 col-12">
+                    <div class="team-single-digital rts-img-reveal-item" data-subtitle="CTO" data-title="Taylor Swift"
+                        data-fx="1">
+                        <a href="#" class="thumbnail">
+                            <img src="{% static  'images/team/tm/15.jpg' %}" alt="team-area">
+                        </a>
+                        <div class="rts-img-reveal-wrapper">
+                            <div class="rts-img-reveal-wrapper__inner">
+                                <div class="rts-img-reveal-wrapper__img">
+                                    <div class="rts-hover-wrapper">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 col-12">
+                    <div class="team-single-digital rts-img-reveal-item" data-subtitle="UI/UX Designer"
+                        data-title="Jone Favinho" data-fx="1">
+                        <a href="#" class="thumbnail">
+                            <img src="{% static  'images/team/tm/16.jpg' %}" alt="team-area">
+                        </a>
+                        <div class="rts-img-reveal-wrapper">
+                            <div class="rts-img-reveal-wrapper__inner">
+                                <div class="rts-img-reveal-wrapper__img">
+                                    <div class="rts-hover-wrapper">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 col-12">
+                    <div class="team-single-digital rts-img-reveal-item" data-subtitle="Motion Designer"
+                        data-title="Mokka Soriars" data-fx="1">
+                        <a href="#" class="thumbnail">
+                            <img src="{% static  'images/team/tm/17.jpg' %}" alt="team-area">
+                        </a>
+                        <div class="rts-img-reveal-wrapper">
+                            <div class="rts-img-reveal-wrapper__inner">
+                                <div class="rts-img-reveal-wrapper__img">
+                                    <div class="rts-hover-wrapper">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 col-12">
+                    <div class="team-single-digital rts-img-reveal-item" data-subtitle="UI/UX Designer"
+                        data-title="Sam Smith" data-fx="1">
+                        <a href="#" class="thumbnail">
+                            <img src="{% static  'images/team/tm/18.jpg' %}" alt="team-area">
+                        </a>
+                        <div class="rts-img-reveal-wrapper">
+                            <div class="rts-img-reveal-wrapper__inner">
+                                <div class="rts-img-reveal-wrapper__img">
+                                    <div class="rts-hover-wrapper">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 col-12">
+                    <div class="team-single-digital rts-img-reveal-item" data-subtitle="UI/UX Designer"
+                        data-title="Kobir Ahesan" data-fx="1">
+                        <a href="#" class="thumbnail">
+                            <img src="{% static  'images/team/tm/19.jpg' %}" alt="team-area">
+                        </a>
+                        <div class="rts-img-reveal-wrapper">
+                            <div class="rts-img-reveal-wrapper__inner">
+                                <div class="rts-img-reveal-wrapper__img">
+                                    <div class="rts-hover-wrapper">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 col-12">
+                    <div class="team-single-digital rts-img-reveal-item" data-subtitle="UI/UX Designer"
+                        data-title="Soat Ajijur" data-fx="1">
+                        <a href="#" class="thumbnail">
+                            <img src="{% static  'images/team/tm/20.jpg' %}" alt="team-area">
+                        </a>
+                        <div class="rts-img-reveal-wrapper">
+                            <div class="rts-img-reveal-wrapper__inner">
+                                <div class="rts-img-reveal-wrapper__img">
+                                    <div class="rts-hover-wrapper">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- meet our teams ection end -->
+
+{% endblock  %}

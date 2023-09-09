@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" data-theme="light" class="darkmode">
+
+<head>
+    <meta charset="UTF-8">
+    <?xml version="1.0" encoding="utf-8"?>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduplyUZ Alumni Network</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/fav.png' %}">
+    <link rel="stylesheet" href="{% static 'css/plugins/swiper.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/plugins/fontawesome-5.css' %}">
+    <link rel="stylesheet" href="{% static 'css/plugins/unicons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/plugins/fancybox.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/plugins/metismenu.css' %}">
+    <link rel="stylesheet" href="{% static 'css/vendor/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/plugins/hover-revel.css' %}">
+    <link rel="stylesheet" href="{% static 'css/plugins/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <!-- header one -->
+    <!-- header one -->
+    <header class="header-one header--sticky">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-2 col-md-3 col-4">
+                    <!-- logo area start -->
+                    <a href="{% url 'home' %}" class="thumbnail">
+                        <img src="{% static 'images/Eduply_uz.png' %}" alt="">
+                    </a>
+                    <!-- logo area end -->
+                </div>
+                <div class="col-lg-7 d-none d-xl-block">
+                    <div class="main-header">
+                        <nav class="main-nav">
+                            <ul class="mainmenu">
+                                <li>
+                                    <a href="{% url 'home' %}">Home</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'about' %}">About</a>
+                                </li>
+                                <li class="has-droupdown">
+                                    <a href="#">Services</a>
+                                    <ul class="submenu">
+                                        <li><a class="single" href="{% url 'our-services' %}">Our Services</a></li>
+                                        <li><a class="single" href="{% url 'contact' %}">Study Abroad</a></li>
+                                        <li><a class="single" href="{% url 'contact' %}">Mentorship Program</a></li>
+                                        <li><a class="single" href="{% url 'contact' %}">Scholarship and Funding</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-droupdown">
+                                    <a href="#">Network</a>
+                                    <ul class="submenu">
+                                        <li><a class="single" href="event-list.html">Events</a></li>
+                                        <li><a class="single" href="{% url 'contact' %}">Alumni Network</a></li>
+                                        <li><a class="single" href="mentors.html">Our Mentors</a></li>
+                                        <li><a class="single" href="become-mentor.html">Become a Mentor</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="faq.html">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'contact' %}">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-10 col-md-9 col-8">
+                    <div class="header-right">
+                        <a href="contactus.html" class="rts-btn btn-secondary call-btn d-none d-md-block">Let’s Talk
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M5.96875 7C5.96875 6.46875 5.5 6 4.96875 6H4.5C3.375 6 2.5 6.90625 2.5 8.03125V9.5C2.5 10.625 3.375 11.5 4.5 11.5H5C5.53125 11.5 6 11.0625 6 10.5L5.96875 7ZM8 0C3.5 0 0.125 3.75 0 8V9.25C0 9.6875 0.3125 10 0.71875 10C1.09375 10 1.5 9.6875 1.5 9.25V8C1.5 4.4375 4.40625 1.53125 8 1.53125C11.5625 1.53125 14.5 4.4375 14.5 8V12.5C14.5 13.2188 13.9375 13.75 13.25 13.75H9.78125C9.53125 13.3125 9.03125 13 8.5 13H7.53125C6.8125 13 6.15625 13.5 6 14.2188C5.84375 15.1875 6.5625 16 7.46875 16H8.5C9.03125 16 9.53125 15.7188 9.78125 15.25H13.25C14.75 15.25 16 14.0312 16 12.5V8C15.8438 3.75 12.4688 0 8 0ZM11.5 11.5C12.5938 11.5 13.5 10.625 13.5 9.5V8.03125C13.5 6.90625 12.5938 6 11.5 6H11C10.4375 6 10 6.46875 10 7.03125V10.5C10 11.0625 10.4375 11.5 11 11.5H11.5Z"
+                                    fill="#3B38EB" />
+                            </svg>
+                        </a>
+                        <a id="menu-btn" href="#" class="rts-btn btn-secondary menu-btn"
+                            onclick="event.preventDefault();">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14"
+                                fill="none">
+                                <rect y="12" width="18" height="2" fill="#3B38EB" />
+                                <rect x="5" y="6" width="8" height="2" fill="#3B38EB" />
+                                <rect width="18" height="2" fill="#3B38EB" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header one End -->
+    <!-- header one End -->
+    <div id="side-bar" class="side-bar">
+        <button class="close-icon-menu"><i class="far fa-times"></i></button>
+        <!-- inner menu area desktop start -->
+        <div class="rts-sidebar-menu-desktop">
+            <svg width="170" height="101.67575733081713" viewBox="0 0 370 95.00007629394531" class="css-1j8o68f">
+                <defs id="SvgjsDefs10426"></defs>
+                <g id="SvgjsG10427" featurekey="Ez5wPW-0"
+                    transform="matrix(1.25,0,0,1.25,-12.499991655349731,-14.999923706054688)" fill="#3a37eb">
+                    <g xmlns="http://www.w3.org/2000/svg" transform="translate(0,-952.36218)">
+                        <path
+                            d="m 60.7828,964.36215 27.1809,0.8834 -27.1809,25.9958 z m -1.9745,1.4513 0,26.7845 -25.2681,0 c 8.6166,-8.7334 16.8796,-17.8103 25.2681,-26.7845 z m 27.7053,3.628 3.4864,1.1989 -12.5877,7.4768 z m -68.1835,2.9656 5.5226,0 12.8654,14.0705 -5.9854,6.1204 -12.4026,0 c 9e-4,-6.7347 0,-13.4597 0,-20.1909 z m -1.9746,1.2304 0,5.8364 -6.3555,0 z m 3.363,20.9796 38.627,0 -10.7675,29.43465 z m 39.0898,4.54286 0,41.20229 -12.5878,-6.8775 c 4.1972,-11.443 8.3886,-22.879 12.5878,-34.32479 z"
+                            style="text-indent:0;text-transform:none;direction:ltr;block-progression:tb;baseline-shift:baseline;color:;enable-background:accumulate;"
+                            fill="#3a37eb" fill-opacity="1" stroke="none" marker="none" visibility="visible"
+                            display="inline" overflow="visible"></path>
+                    </g>
+                </g>
+                <g id="SvgjsG10428" featurekey="ujU5uU-0"
+                    transform="matrix(2.748245821061084,0,0,2.748245821061084,118.202912481773,-9.741229105305418)"
+                    fill="#111111">
+                    <path
+                        d="M10.898 14.834 l-0.029297 0.67383 l-7.4414 0 c0.11719 1.6699 1.2305 2.4707 2.5684 2.4707 c1.0059 0 1.7871 -0.46875 2.168 -1.3574 l2.5781 0.38086 c-0.66406 2.0313 -2.4707 3.1934 -4.7266 3.1934 c-3.2422 0 -5.3613 -1.9141 -5.3613 -5.2148 s2.1777 -5.2344 5.2734 -5.2344 c2.8418 0 4.9609 1.5723 4.9707 5.0879 z M5.9473 11.7383 c-1.2793 0 -2.168 0.5957 -2.4414 1.9336 l4.6094 0 c-0.14648 -1.2793 -1.0156 -1.9336 -2.168 -1.9336 z M20.156231249999998 5 l2.8125 0 l0 15 l-2.666 0 l-0.068359 -1.3086 c-0.57617 0.98633 -1.7871 1.543 -3.1543 1.543 c-2.6465 0 -4.834 -1.9531 -4.834 -5.2344 s2.1973 -5.2344 4.834 -5.2344 c1.3184 0 2.4805 0.49805 3.0762 1.4063 l0 -6.1719 z M17.72463125 17.9004 c1.4941 0 2.6563 -1.1426 2.6563 -2.9004 s-1.1719 -2.9102 -2.6563 -2.9102 c-1.4941 0 -2.666 1.1035 -2.666 2.9102 c0 1.7969 1.1719 2.9004 2.666 2.9004 z M32.529328125 9.961 l2.8125 0 l0 10.039 l-2.666 0 l-0.068359 -1.2109 c-0.70313 0.88867 -1.8164 1.4063 -3.1934 1.4063 c-2.4121 0 -3.7402 -1.2598 -3.7402 -3.4766 l0 -6.7578 l2.8223 0 l0 6.1523 c0 1.3281 0.83008 1.8164 1.8066 1.8164 c1.1621 0 2.2168 -0.58594 2.2266 -2.4316 l0 -5.5371 z M44.140675 9.766 c2.6465 0 4.834 1.9434 4.834 5.2344 s-2.1875 5.2344 -4.834 5.2344 c-1.3086 0 -2.4805 -0.50781 -3.0762 -1.4258 l0 6.0742 l-2.8125 0 l0 -14.922 l2.666 0 l0.078125 1.3477 c0.55664 -0.99609 1.7773 -1.543 3.1445 -1.543 z M43.505875 17.9004 c1.4746 0 2.6563 -1.0742 2.6563 -2.9004 s-1.1816 -2.9004 -2.6563 -2.9004 c-1.5039 0 -2.6758 1.1426 -2.6758 2.9004 s1.1719 2.9004 2.6758 2.9004 z M51.093771875 20 l0 -15 l2.8418 0 l0 15 l-2.8418 0 z M63.417925 9.961 l2.8809 0 l-6.1914 14.766 l-2.8516 0 l2.2949 -5.1367 l-4.1309 -9.6289 l3.0664 0 l2.3926 6.6016 z M73.378925 20.19531 c-3.0957 0 -5.5176 -1.582 -5.5176 -5.1367 l0 -9.1699 l2.9297 0 l0 8.7695 c0 2.1484 1.1426 2.9492 2.5879 2.9492 c1.4551 0 2.6074 -0.81055 2.6074 -2.9492 l0 -8.7695 l2.9297 0 l0 9.1699 c0 3.5547 -2.4316 5.1367 -5.5371 5.1367 z M84.84371875 17.4121 l6.7773 0 l0 2.5879 l-10.283 0 l0 -2.3145 l6.6895 -9.2188 l-6.6797 0 l0 -2.5781 l10.146 0 l0 2.3145 z">
+                    </path>
+                </g>
+                <g id="SvgjsG10429" featurekey="sloganFeature-0"
+                    transform="matrix(0.8424532904153842,0,0,0.8424532904153842,119.75274000425495,74.2036512340303)"
+                    fill="#111111">
+                    <path
+                        d="M11.27 20 l-1.0254 -2.9102 l-5.9277 0 l-1.0254 2.9102 l-2.998 0 l5.1953 -14.111 l3.584 0 l5.1953 14.111 l-2.998 0 z M5.1758 14.6387 l4.209 0 l-2.0996 -5.9863 z M23.164103125 17.4121 l4.4238 0 l0 2.5879 l-7.3535 0 l0 -14.111 l2.9297 0 l0 11.523 z M38.896503125 20.19531 c-3.0957 0 -5.5176 -1.582 -5.5176 -5.1367 l0 -9.1699 l2.9297 0 l0 8.7695 c0 2.1484 1.1426 2.9492 2.5879 2.9492 c1.4551 0 2.6074 -0.81055 2.6074 -2.9492 l0 -8.7695 l2.9297 0 l0 9.1699 c0 3.5547 -2.4316 5.1367 -5.5371 5.1367 z M67.812453125 20 l-2.9199 0 l-0.92773 -10.635 l-3.5742 10.635 l-1.8945 0 l-3.5742 -10.635 l-0.9375 10.635 l-2.9297 0 l1.1816 -14.111 l4.1797 0 l3.0078 8.8574 l3.0469 -8.8574 l4.1797 0 z M84.365390625 5.888999999999999 l2.9199 0 l0 14.111 l-3.3887 0 l-6.25 -10.088 l0 10.088 l-2.9199 0 l0 -14.111 l3.3496 0 l6.2891 10.029 l0 -10.029 z M94.785184375 20 l0 -14.111 l2.9297 0 l0 14.111 l-2.9297 0 z M123.886875 5.888999999999999 l2.9199 0 l0 14.111 l-3.3887 0 l-6.25 -10.088 l0 10.088 l-2.9199 0 l0 -14.111 l3.3496 0 l6.2891 10.029 l0 -10.029 z M142.49046875 8.467 l-5.2344 0 l0 3.2031 l4.6387 0 l0 2.5488 l-4.6387 0 l0 3.1934 l5.2344 0 l0 2.5879 l-8.1836 0 l0 -14.111 l8.1836 0 l0 2.5781 z M157.539296875 5.888999999999999 l0 2.5781 l-3.3496 0 l0 11.533 l-2.9004 0 l0 -11.533 l-3.3691 0 l0 -2.5781 l9.6191 0 z M165.89844375 20 l-3.6914 -14.111 l3.0469 0 l2.7539 10.684 l3.1543 -10.684 l2.4707 0 l3.1348 10.684 l2.7832 -10.684 l3.0371 0 l-3.6914 14.111 l-3.7695 0 l-2.7344 -8.7207 l-2.7246 8.7207 l-3.7695 0 z M194.941434375 20.19531 c-4.1504 0 -7.2168 -2.832 -7.2168 -7.2559 c0 -4.4336 3.0664 -7.2461 7.2168 -7.2461 c4.1406 0 7.207 2.8125 7.207 7.2461 c0 4.4238 -3.0664 7.2559 -7.207 7.2559 z M194.941434375 17.5098 c2.4316 0 4.2969 -1.709 4.2969 -4.5703 c0 -2.8516 -1.8652 -4.5508 -4.2969 -4.5508 s-4.2969 1.6992 -4.2969 4.5508 c0 2.8613 1.8652 4.5703 4.2969 4.5703 z M216.142534375 20 l-3.6719 -6.2109 l-0.84961 0 l0 6.2109 l-2.9297 0 l0 -14.111 l5.1172 0 c3.1934 0 4.541 1.8848 4.541 4.2188 c0 1.8945 -1.0742 3.125 -2.9883 3.5352 l4.248 6.3574 l-3.4668 0 z M211.621134375 8.32 l0 3.3691 l1.7285 0 c1.5625 0 2.1973 -0.66406 2.1973 -1.6797 c0 -1.0059 -0.63477 -1.6895 -2.1973 -1.6895 l-1.7285 0 z M233.955296875 20 l-4.3848 -5.9961 l-1.0352 0 l0 5.9961 l-2.9297 0 l0 -14.111 l2.9297 0 l0 5.5469 l0.99609 0 l4.4238 -5.5469 l3.5742 0 l-5.4688 6.748 l5.6348 7.3633 l-3.7402 0 z">
+                    </path>
+                </g>
+            </svg>
+            <div class="body d-none d-xl-block">
+
+                <p class="disc">
+                    Together, let's shape the future of aspiring students and make their study abroad experience truly
+                    transformative!
+                </p>
+                <div class="social-wrapper-two">
+                    <ul class="social-area">
+                        <li data-sal-delay="150" data-sal="slide-up" data-sal-duration="800" class="sal-animate"><a
+                                href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li data-sal-delay="250" data-sal="slide-up" data-sal-duration="800" class="sal-animate"><a
+                                href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li data-sal-delay="350" data-sal="slide-up" data-sal-duration="800" class="sal-animate"><a
+                                href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li data-sal-delay="450" data-sal="slide-up" data-sal-duration="800" class="sal-animate"><a
+                                href="#"><i class="fab fa-telegram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="get-in-touch mt--50">
+                    <!-- title -->
+                    <div class="h6 title">Get In Touch</div>
+                    <!-- title End -->
+                    <div class="wrapper">
+                        <!-- single -->
+                        <div class="single">
+                            <i class="fas fa-phone-alt"></i>
+                            <a href="#">+123 4567 890</a>
+                        </div>
+                        <!-- single ENd -->
+                        <!-- single -->
+                        <div class="single">
+                            <i class="fas fa-envelope"></i>
+                            <a href="#">eduplyuz@gmail.com</a>
+                        </div>
+                        <!-- single ENd -->
+                        <!-- single -->
+                        <div class="single">
+                            <i class="fas fa-globe"></i>
+                            <a href="#">www.eduply.uz</a>
+                        </div>
+                        <!-- single ENd -->
+                        <!-- single -->
+                        <div class="single">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <a href="#">Amir Temur Street 4</a>
+                        </div>
+                        <!-- single ENd -->
+                    </div>
+                </div>
+            </div>
+            <div class="body-mobile d-block d-xl-none">
+                <nav class="nav-main mainmenu-nav mt--30">
+                    <ul class="mainmenu" id="mobile-menu-active">
+                        <li>
+                            <a href="{% url 'home' %}">Home</a>
+                        </li>
+                        <li><a href="{% url 'about' %}">About Us</a></li>
+                        <li class="has-droupdown">
+                            <a href="#">Services</a>
+                            <ul class="submenu">
+                                <li><a class="mobile-menu-link" href="{% url 'our-services' %}">Our Services</a></li>
+                                <li><a class="mobile-menu-link" href="{% url 'contact' %}">Study Abroad</a></li>
+                                <li><a class="mobile-menu-link" href="{% url 'contact' %}">Mentorship Program</a></li>
+                                <li><a class="mobile-menu-link" href="{% url 'contact' %}">Scholarship and Funding</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has-droupdown">
+                            <a href="#">Network</a>
+                            <ul class="submenu">
+                                <li><a class="mobile-menu-link" href="event-list.html">Events</a></li>
+                                <li><a class="mobile-menu-link" href="{% url 'contact' %}">Alumni Network</a></li>
+                                <li><a class="mobile-menu-link" href="mentors.html">Our Mentors</a></li>
+                                <li><a class="mobile-menu-link" href="become-mentor.html">Become a Mentor</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="{% url 'faq' %}">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'contact' %}">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social-wrapper-two mt--50">
+                    <ul class="social-area">
+                        <li data-sal-delay="150" data-sal="slide-up" data-sal-duration="800" class="sal-animate"><a
+                                href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li data-sal-delay="250" data-sal="slide-up" data-sal-duration="800" class="sal-animate"><a
+                                href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li data-sal-delay="350" data-sal="slide-up" data-sal-duration="800" class="sal-animate"><a
+                                href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li data-sal-delay="350" data-sal="slide-up" data-sal-duration="800" class="sal-animate"><a
+                                href="#"><i class="fab fa-telegram"></i></a></li>
+                    </ul>
+                </div>
+                <!-- <a href="#" class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btnmenu">Get Quote</a> -->
+            </div>
+        </div>
+        <!-- inner menu area desktop End -->
+    </div>
+    <div id="anywhere-home"></div>
+
+    {% block content %}
+
+    {% endblock %}
+    <!-- footer area start -->
+    <div class="rts-footer-area-one rts-section-gap footer-one-bg">
+        <div class="container">
+            <div class="row">
+                <div class="bg-footer-one-shape">
+                    <div class="wrapper">
+                        <img class="footer_shape small" src="{% static 'images/footer/01.png' %}" alt="Footer_bg"
+                            data-sal-delay="150" data-sal="zoom-in" data-sal-duration="800">
+                        <img class="footer_shape large" src="{% static 'images/footer/02.png' %}" alt="Footer_bg"
+                            data-sal-delay="150" data-sal="zoom-in" data-sal-duration="800">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-one-left">
+                        <a class="logo" href="index.html">
+                            <svg width="170" height="101.67575733081713" viewBox="0 0 370 95.00007629394531"
+                                class="css-1j8o68f">
+                                <defs></defs>
+                                <g
+                                    transform="matrix(1.25,0,0,1.25,-12.499991655349731,-14.999923706054688)"
+                                    fill="#3a37eb">
+                                    <g xmlns="http://www.w3.org/2000/svg" transform="translate(0,-952.36218)">
+                                        <path
+                                            d="m 60.7828,964.36215 27.1809,0.8834 -27.1809,25.9958 z m -1.9745,1.4513 0,26.7845 -25.2681,0 c 8.6166,-8.7334 16.8796,-17.8103 25.2681,-26.7845 z m 27.7053,3.628 3.4864,1.1989 -12.5877,7.4768 z m -68.1835,2.9656 5.5226,0 12.8654,14.0705 -5.9854,6.1204 -12.4026,0 c 9e-4,-6.7347 0,-13.4597 0,-20.1909 z m -1.9746,1.2304 0,5.8364 -6.3555,0 z m 3.363,20.9796 38.627,0 -10.7675,29.43465 z m 39.0898,4.54286 0,41.20229 -12.5878,-6.8775 c 4.1972,-11.443 8.3886,-22.879 12.5878,-34.32479 z"
+                                            style="text-indent:0;text-transform:none;direction:ltr;block-progression:tb;baseline-shift:baseline;color:;enable-background:accumulate;"
+                                            fill="#3a37eb" fill-opacity="1" stroke="none" marker="none"
+                                            visibility="visible" display="inline" overflow="visible"></path>
+                                    </g>
+                                </g>
+                                <g
+                                    transform="matrix(2.748245821061084,0,0,2.748245821061084,118.202912481773,-9.741229105305418)"
+                                    fill="#ffffff">
+                                    <path
+                                        d="M10.898 14.834 l-0.029297 0.67383 l-7.4414 0 c0.11719 1.6699 1.2305 2.4707 2.5684 2.4707 c1.0059 0 1.7871 -0.46875 2.168 -1.3574 l2.5781 0.38086 c-0.66406 2.0313 -2.4707 3.1934 -4.7266 3.1934 c-3.2422 0 -5.3613 -1.9141 -5.3613 -5.2148 s2.1777 -5.2344 5.2734 -5.2344 c2.8418 0 4.9609 1.5723 4.9707 5.0879 z M5.9473 11.7383 c-1.2793 0 -2.168 0.5957 -2.4414 1.9336 l4.6094 0 c-0.14648 -1.2793 -1.0156 -1.9336 -2.168 -1.9336 z M20.156231249999998 5 l2.8125 0 l0 15 l-2.666 0 l-0.068359 -1.3086 c-0.57617 0.98633 -1.7871 1.543 -3.1543 1.543 c-2.6465 0 -4.834 -1.9531 -4.834 -5.2344 s2.1973 -5.2344 4.834 -5.2344 c1.3184 0 2.4805 0.49805 3.0762 1.4063 l0 -6.1719 z M17.72463125 17.9004 c1.4941 0 2.6563 -1.1426 2.6563 -2.9004 s-1.1719 -2.9102 -2.6563 -2.9102 c-1.4941 0 -2.666 1.1035 -2.666 2.9102 c0 1.7969 1.1719 2.9004 2.666 2.9004 z M32.529328125 9.961 l2.8125 0 l0 10.039 l-2.666 0 l-0.068359 -1.2109 c-0.70313 0.88867 -1.8164 1.4063 -3.1934 1.4063 c-2.4121 0 -3.7402 -1.2598 -3.7402 -3.4766 l0 -6.7578 l2.8223 0 l0 6.1523 c0 1.3281 0.83008 1.8164 1.8066 1.8164 c1.1621 0 2.2168 -0.58594 2.2266 -2.4316 l0 -5.5371 z M44.140675 9.766 c2.6465 0 4.834 1.9434 4.834 5.2344 s-2.1875 5.2344 -4.834 5.2344 c-1.3086 0 -2.4805 -0.50781 -3.0762 -1.4258 l0 6.0742 l-2.8125 0 l0 -14.922 l2.666 0 l0.078125 1.3477 c0.55664 -0.99609 1.7773 -1.543 3.1445 -1.543 z M43.505875 17.9004 c1.4746 0 2.6563 -1.0742 2.6563 -2.9004 s-1.1816 -2.9004 -2.6563 -2.9004 c-1.5039 0 -2.6758 1.1426 -2.6758 2.9004 s1.1719 2.9004 2.6758 2.9004 z M51.093771875 20 l0 -15 l2.8418 0 l0 15 l-2.8418 0 z M63.417925 9.961 l2.8809 0 l-6.1914 14.766 l-2.8516 0 l2.2949 -5.1367 l-4.1309 -9.6289 l3.0664 0 l2.3926 6.6016 z M73.378925 20.19531 c-3.0957 0 -5.5176 -1.582 -5.5176 -5.1367 l0 -9.1699 l2.9297 0 l0 8.7695 c0 2.1484 1.1426 2.9492 2.5879 2.9492 c1.4551 0 2.6074 -0.81055 2.6074 -2.9492 l0 -8.7695 l2.9297 0 l0 9.1699 c0 3.5547 -2.4316 5.1367 -5.5371 5.1367 z M84.84371875 17.4121 l6.7773 0 l0 2.5879 l-10.283 0 l0 -2.3145 l6.6895 -9.2188 l-6.6797 0 l0 -2.5781 l10.146 0 l0 2.3145 z">
+                                    </path>
+                                </g>
+                                <g
+                                    transform="matrix(0.8424532904153842,0,0,0.8424532904153842,119.75274000425495,74.2036512340303)"
+                                    fill="#ffffff">
+                                    <path
+                                        d="M11.27 20 l-1.0254 -2.9102 l-5.9277 0 l-1.0254 2.9102 l-2.998 0 l5.1953 -14.111 l3.584 0 l5.1953 14.111 l-2.998 0 z M5.1758 14.6387 l4.209 0 l-2.0996 -5.9863 z M23.164103125 17.4121 l4.4238 0 l0 2.5879 l-7.3535 0 l0 -14.111 l2.9297 0 l0 11.523 z M38.896503125 20.19531 c-3.0957 0 -5.5176 -1.582 -5.5176 -5.1367 l0 -9.1699 l2.9297 0 l0 8.7695 c0 2.1484 1.1426 2.9492 2.5879 2.9492 c1.4551 0 2.6074 -0.81055 2.6074 -2.9492 l0 -8.7695 l2.9297 0 l0 9.1699 c0 3.5547 -2.4316 5.1367 -5.5371 5.1367 z M67.812453125 20 l-2.9199 0 l-0.92773 -10.635 l-3.5742 10.635 l-1.8945 0 l-3.5742 -10.635 l-0.9375 10.635 l-2.9297 0 l1.1816 -14.111 l4.1797 0 l3.0078 8.8574 l3.0469 -8.8574 l4.1797 0 z M84.365390625 5.888999999999999 l2.9199 0 l0 14.111 l-3.3887 0 l-6.25 -10.088 l0 10.088 l-2.9199 0 l0 -14.111 l3.3496 0 l6.2891 10.029 l0 -10.029 z M94.785184375 20 l0 -14.111 l2.9297 0 l0 14.111 l-2.9297 0 z M123.886875 5.888999999999999 l2.9199 0 l0 14.111 l-3.3887 0 l-6.25 -10.088 l0 10.088 l-2.9199 0 l0 -14.111 l3.3496 0 l6.2891 10.029 l0 -10.029 z M142.49046875 8.467 l-5.2344 0 l0 3.2031 l4.6387 0 l0 2.5488 l-4.6387 0 l0 3.1934 l5.2344 0 l0 2.5879 l-8.1836 0 l0 -14.111 l8.1836 0 l0 2.5781 z M157.539296875 5.888999999999999 l0 2.5781 l-3.3496 0 l0 11.533 l-2.9004 0 l0 -11.533 l-3.3691 0 l0 -2.5781 l9.6191 0 z M165.89844375 20 l-3.6914 -14.111 l3.0469 0 l2.7539 10.684 l3.1543 -10.684 l2.4707 0 l3.1348 10.684 l2.7832 -10.684 l3.0371 0 l-3.6914 14.111 l-3.7695 0 l-2.7344 -8.7207 l-2.7246 8.7207 l-3.7695 0 z M194.941434375 20.19531 c-4.1504 0 -7.2168 -2.832 -7.2168 -7.2559 c0 -4.4336 3.0664 -7.2461 7.2168 -7.2461 c4.1406 0 7.207 2.8125 7.207 7.2461 c0 4.4238 -3.0664 7.2559 -7.207 7.2559 z M194.941434375 17.5098 c2.4316 0 4.2969 -1.709 4.2969 -4.5703 c0 -2.8516 -1.8652 -4.5508 -4.2969 -4.5508 s-4.2969 1.6992 -4.2969 4.5508 c0 2.8613 1.8652 4.5703 4.2969 4.5703 z M216.142534375 20 l-3.6719 -6.2109 l-0.84961 0 l0 6.2109 l-2.9297 0 l0 -14.111 l5.1172 0 c3.1934 0 4.541 1.8848 4.541 4.2188 c0 1.8945 -1.0742 3.125 -2.9883 3.5352 l4.248 6.3574 l-3.4668 0 z M211.621134375 8.32 l0 3.3691 l1.7285 0 c1.5625 0 2.1973 -0.66406 2.1973 -1.6797 c0 -1.0059 -0.63477 -1.6895 -2.1973 -1.6895 l-1.7285 0 z M233.955296875 20 l-4.3848 -5.9961 l-1.0352 0 l0 5.9961 l-2.9297 0 l0 -14.111 l2.9297 0 l0 5.5469 l0.99609 0 l4.4238 -5.5469 l3.5742 0 l-5.4688 6.748 l5.6348 7.3633 l-3.7402 0 z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </a>
+                        <p class="disc" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
+                            Join us on this exciting adventure of academic exploration, personal growth, and cultural
+                            immersion. Together, let's unlock the doors to a world of opportunities and make your study
+                            abroad dreams a reality.
+                        </p>
+                        <ul class="social-area">
+                            <li data-sal-delay="150" data-sal="slide-up" data-sal-duration="800"><a href="#"><i
+                                        class="fab fa-facebook-f"></i></a></li>
+                            <li data-sal-delay="250" data-sal="slide-up" data-sal-duration="800"><a href="#"><i
+                                        class="fab fa-instagram"></i></a></li>
+                            <li data-sal-delay="350" data-sal="slide-up" data-sal-duration="800"><a href="#"><i
+                                        class="fab fa-linkedin-in"></i></a></li>
+                            <li data-sal-delay="450" data-sal="slide-up" data-sal-duration="800"><a href="#"><i
+                                        class="fab fa-telegram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="footer-right-one">
+                        <div class="single-wized-footer">
+                            <h5 class="title-heading" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                                Services
+                            </h5>
+                            <ul class="list">
+                                <li data-sal-delay="150" data-sal="slide-up" data-sal-duration="800"><a
+                                        href="service.html">Study Abroad</a></li>
+                                <li data-sal-delay="250" data-sal="slide-up" data-sal-duration="800"><a
+                                        href="service.html">Mentorship Program</a></li>
+                                <li data-sal-delay="350" data-sal="slide-up" data-sal-duration="800"><a
+                                        href="contactus.html">Scholarship and Funding</a></li>
+                                <li data-sal-delay="450" data-sal="slide-up" data-sal-duration="800"><a
+                                        href="about.html">Mission and values</a></li>
+                            </ul>
+                        </div>
+                        <div class="single-wized-footer">
+                            <h5 class="title-heading" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                                Alumni Network
+                            </h5>
+                            <ul class="list">
+                                <li data-sal-delay="150" data-sal="slide-up" data-sal-duration="800"><a
+                                        href="event-list.html">Alumni Events and Engagement</a></li>
+                                <li data-sal-delay="450" data-sal="slide-up" data-sal-duration="800"><a
+                                        href="event-list.html">Alumni Success Stories</a></li>
+                                <li data-sal-delay="250" data-sal="slide-up" data-sal-duration="800"><a
+                                        href="become-mentor.html">Become a Mentor</a></li>
+                                <li data-sal-delay="350" data-sal="slide-up" data-sal-duration="800"><a
+                                        href="contactus.html">Become a Partner</a></li>
+                            </ul>
+                        </div>
+                        <div class="single-wized-footer">
+                            <h5 class="title-heading" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                                Support
+                            </h5>
+                            <ul class="list">
+                                <li data-sal-delay="150" data-sal="slide-up" data-sal-duration="800"><a
+                                        href="contactus.html">Contact</a></li>
+                                <li data-sal-delay="150" data-sal="slide-up" data-sal-duration="800"><a
+                                        href="faq.html">FAQ</a></li>
+                                <li data-sal-delay="250" data-sal="slide-up" data-sal-duration="800"><a href="#">Privacy
+                                        Policy</a></li>
+                                <li data-sal-delay="350" data-sal="slide-up" data-sal-duration="800"><a href="#">Terms
+                                        of Use</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer area end -->
+
+    <!-- rts-copyright-area -->
+    <div class="rts-copyright-area ptb--30 ptb_sm--15">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="copyu-right-wrapper">
+
+                        <div class="left single">
+                            <p>Copyright @2023 Eduply. by <a
+                                    href="#">Entrepreneurs</a></p>
+                        </div>
+                        <div class="left single">
+                            <a href="{% url 'about' %}">About Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- rts-copyright-area ENd -->
+
+    <div class="loader-wrapper">
+        <div class="loader">
+        </div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+                style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
+            </path>
+        </svg>
+    </div>
+
+    <!-- scripts start form hear -->
+    <script src="{% static 'js/vendor/jquery.min.js' %}"></script>
+    <script src="{% static 'js/vendor/jqueryui.js' %}"></script>
+    <script src="{% static 'js/vendor/waypoint.js' %}"></script>
+    <script src="{% static 'js/plugins/swiper.js' %}"></script>
+    <script src="{% static 'js/plugins/counterup.js' %}"></script>
+    <script src="{% static 'js/plugins/sal.min.js' %}"></script>
+    <script src="{% static 'js/plugins/fancybox.js' %}"></script>
+    <script src="{% static 'js/plugins/metismenu.js' %}"></script>
+    <script src="{% static 'js/plugins/marquery.js' %}"></script>
+    <script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/vendor/waw.js' %}"></script>
+
+    <script src="{% static 'js/plugins/hover-revel.js' %}"></script>
+    <script src="{% static 'js/plugins/twinmax.js' %}"></script>
+
+    <script src="{% static 'js/plugins/contact.form.js' %}"></script>
+
+    <!-- main Js -->
+    <script src="{% static 'js/main.js' %}"></script>
+    <!-- scripts end form hear -->
+</body>
+
+</html>

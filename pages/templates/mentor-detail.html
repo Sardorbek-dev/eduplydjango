@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- start breadcrumb area -->
+    <div class="rts-breadcrumb-area breadcrumb-bg bg_image">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 breadcrumb-1">
+                    <h1 class="title" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">Team Member</h1>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="bread-tag">
+                        <a href="{% url 'home' %}" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">Home</a>
+                        <span> / </span>
+                        <a href="#" class="active" data-sal-delay="450" data-sal="slide-up" data-sal-duration="800">Team
+                            Member</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end breadcrumb area -->
+
+    <!-- rts-team details area Start-->
+    <div class="rts-team-details rts-section-gap">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-xl-6 col-lg-12 col-md-12" data-sal-delay="150" data-sal="slide-up"
+                    data-sal-duration="800">
+                    <div class="details-thumb">
+                        <img src="{% static 'images/team/tm/team-lg.jpg' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-12 col-md-12 pl--35 pl_sm--15" data-sal-delay="250" data-sal="slide-up"
+                    data-sal-duration="800">
+                    <div class="details-right-inner">
+                        <div class="title-area">
+                            <span class="pre-title">
+                                Information Technology
+                            </span>
+                            <h3 class="title">David Smith</h3>
+                        </div>
+                        <p class="disc">
+                            David is an accomplished mentor with a Master's degree from the United States, who is
+                            passionate about helping students navigate their academic journey.
+                            With his extensive knowledge and experience, David is dedicated to supporting aspiring
+                            students in their pursuit of studying abroad.
+                        </p>
+                        <div class="team-details-support-wrapper">
+                            <i class="far fa-envelope"></i>
+                            <div class="support-innner">
+                                <span>Email Address</span>
+                                <a href="#">
+                                    <h5 class="title">support@david.com</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="team-details-support-wrapper">
+                            <i class="fal fa-phone-volume"></i>
+                            <div class="support-innner">
+                                <span>Phone Number</span>
+                                <a href="#">
+                                    <h5 class="title">+0123 4567 89</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="team-details-support-wrapper">
+                            <i class="far fa-map-marker-alt"></i>
+                            <div class="support-innner">
+                                <span>Office Location</span>
+                                <a href="#">
+                                    <h5 class="title">Amir Temur Street 4</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#" class="rts-btn btn-primary"> Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- rts-team details area ENd -->
+
+    <!-- rts skills area start -->
+    <div class="rts-team-skill-area rts-section-gapBottom">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <!-- single skill area -->
+                    <div class="single-about-skill-inner">
+                        <h5 class="title">Areas of Expertise</h5>
+                        <p class="disc">
+                            His academic achievements and practical experiences have equipped him with a deep
+                            understanding of the challenges and opportunities that students encounter
+                            when pursuing higher education abroad.
+                        </p>
+                        <div class="rts-progress-one-wrapper">
+                            <div class="single-progress">
+                                <div class="progress-top">
+                                    <p class="progress-title">Choosing the Right Program</p>
+                                    <span class="persectage">88%</span>
+                                </div>
+                                <div class="meter cadetblue">
+                                    <span data-progress="88" style="width:0;"></span>
+                                </div>
+                            </div>
+                            <div class="single-progress">
+                                <div class="progress-top">
+                                    <p class="progress-title">Admissions Process</p>
+                                    <span class="persectage">93%</span>
+                                </div>
+                                <div class="meter">
+                                    <span data-progress="93" style="width:0;"></span>
+                                </div>
+                            </div>
+                            <div class="single-progress">
+                                <div class="progress-top">
+                                    <p class="progress-title">Academic Support</p>
+                                    <span class="persectage">85%</span>
+                                </div>
+                                <div class="meter orange">
+                                    <span data-progress="85" style="width:0;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single skill area end-->
+                </div>
+                <div class="col-lg-6" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
+                    <!-- single skill area -->
+                    <div class="single-about-skill-inner pl--30 pl_md--0 pl_sm--0">
+                        <h5 class="title">Educational Experience</h5>
+                        <p class="disc">
+                            David holds a Master's degree in Information Technology from California University, one of
+                            the prestigious educational institutions in the United States.
+                        </p>
+
+                        <div class="education-skill-wrapper">
+                            <div class="single-skill">
+                                <div class="number-area">
+                                    <p>1 <span>st</span></p>
+                                </div>
+                                <h6 class="experience">Westminster Tashkent</h6>
+                                <div class="date">2015 - 2019 </div>
+                            </div>
+                            <div class="single-skill">
+                                <div class="number-area">
+                                    <p>2 <span>nd</span></p>
+                                </div>
+                                <h6 class="experience">University California</h6>
+                                <div class="date">2019 - 2021 <span>(USA)</span></div>
+                            </div>
+                            <div class="single-skill">
+                                <div class="number-area">
+                                    <p>3 <span>rd</span></p>
+                                </div>
+                                <h6 class="experience">MIT</h6>
+                                <div class="date">2021 - 2023 <span>(PHD)</span></div>
+                            </div>
+                            <div class="single-skill">
+                                <div class="number-area">
+                                    <p>4 <span>th</span></p>
+                                </div>
+                                <h6 class="experience">Web Developer</h6>
+                                <div class="date">2023 - Present <span>(Amazon)</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single skill area end-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- rts skills area end -->
+
+{% endblock  %}
