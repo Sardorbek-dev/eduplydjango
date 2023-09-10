@@ -43,26 +43,23 @@
                                 <li>
                                     <a href="{% url 'about' %}">About</a>
                                 </li>
+                                <li>
+                                    <a href="{% url 'our-services' %}">Services</a>
+                                </li>
                                 <li class="has-droupdown">
-                                    <a href="#">Services</a>
+                                    <a href="#">Mentorship</a>
                                     <ul class="submenu">
-                                        <li><a class="single" href="{% url 'our-services' %}">Our Services</a></li>
-                                        <li><a class="single" href="{% url 'contact' %}">Study Abroad</a></li>
-                                        <li><a class="single" href="{% url 'contact' %}">Mentorship Program</a></li>
-                                        <li><a class="single" href="{% url 'contact' %}">Scholarship and Funding</a></li>
+                                        <li><a class="single" href="{% url 'mentors' %}">Our Mentors</a></li>
+                                        <li><a class="single" href="{% url 'become-mentor' %}">Become a Mentor</a></li>
                                     </ul>
                                 </li>
                                 <li class="has-droupdown">
                                     <a href="#">Network</a>
                                     <ul class="submenu">
-                                        <li><a class="single" href="event-list.html">Events</a></li>
-                                        <li><a class="single" href="{% url 'contact' %}">Alumni Network</a></li>
-                                        <li><a class="single" href="mentors.html">Our Mentors</a></li>
-                                        <li><a class="single" href="become-mentor.html">Become a Mentor</a></li>
+                                        <li><a class="single" href="{% url 'events' %}">Events</a></li>
+                                        <!--<li><a class="single" href="{% url 'contact' %}">Alumni Network</a></li>-->
+                                        <li><a class="single" href="{% url 'faq' %}">FAQ</a></li>
                                     </ul>
-                                </li>
-                                <li>
-                                    <a href="faq.html">FAQ</a>
                                 </li>
                                 <li>
                                     <a href="{% url 'contact' %}">Contact</a>
@@ -73,7 +70,7 @@
                 </div>
                 <div class="col-xl-3 col-lg-10 col-md-9 col-8">
                     <div class="header-right">
-                        <a href="contactus.html" class="rts-btn btn-secondary call-btn d-none d-md-block">Let’s Talk
+                        <a href="{% url 'contact' %}" class="rts-btn btn-secondary call-btn d-none d-md-block">Let’s Talk
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
                                 fill="none">
                                 <path
@@ -165,27 +162,20 @@
                             <a href="{% url 'home' %}">Home</a>
                         </li>
                         <li><a href="{% url 'about' %}">About Us</a></li>
+                        <li><a href="{% url 'our-services' %}">Services</a></li>
                         <li class="has-droupdown">
-                            <a href="#">Services</a>
+                            <a href="#">Mentorship</a>
                             <ul class="submenu">
-                                <li><a class="mobile-menu-link" href="{% url 'our-services' %}">Our Services</a></li>
-                                <li><a class="mobile-menu-link" href="{% url 'contact' %}">Study Abroad</a></li>
-                                <li><a class="mobile-menu-link" href="{% url 'contact' %}">Mentorship Program</a></li>
-                                <li><a class="mobile-menu-link" href="{% url 'contact' %}">Scholarship and Funding</a></li>
+                                <li><a class="mobile-menu-link" href="{% url 'mentors' %}">Our Mentors</a></li>
+                                <li><a class="mobile-menu-link" href="{% url 'become-mentor' %}">Become a Mentor</a></li>
                             </ul>
                         </li>
-
                         <li class="has-droupdown">
                             <a href="#">Network</a>
                             <ul class="submenu">
-                                <li><a class="mobile-menu-link" href="event-list.html">Events</a></li>
-                                <li><a class="mobile-menu-link" href="{% url 'contact' %}">Alumni Network</a></li>
-                                <li><a class="mobile-menu-link" href="mentors.html">Our Mentors</a></li>
-                                <li><a class="mobile-menu-link" href="become-mentor.html">Become a Mentor</a></li>
+                                <li><a class="mobile-menu-link" href="{% url 'events' %}">Events</a></li>
+                                <li><a class="mobile-menu-link" href="{% url 'faq' %}">FAQ</a></li>
                             </ul>
-                        </li>
-                        <li>
-                            <a href="{% url 'faq' %}">FAQ</a>
                         </li>
                         <li>
                             <a href="{% url 'contact' %}">Contact Us</a>
@@ -252,17 +242,15 @@
                     <div class="footer-right-one">
                         <div class="single-wized-footer">
                             <h5 class="title-heading" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                                Services
+                                EduplyUZ
                             </h5>
                             <ul class="list">
                                 <li data-sal-delay="150" data-sal="slide-up" data-sal-duration="800"><a
-                                        href="service.html">Study Abroad</a></li>
+                                        href="{% url 'our-services' %}">Services</a></li>
                                 <li data-sal-delay="250" data-sal="slide-up" data-sal-duration="800"><a
-                                        href="service.html">Mentorship Program</a></li>
-                                <li data-sal-delay="350" data-sal="slide-up" data-sal-duration="800"><a
-                                        href="contactus.html">Scholarship and Funding</a></li>
+                                        href="{% url 'mentors' %}">Mentors</a></li>
                                 <li data-sal-delay="450" data-sal="slide-up" data-sal-duration="800"><a
-                                        href="about.html">Mission and values</a></li>
+                                        href="{% url 'about' %}">Mission and values</a></li>
                             </ul>
                         </div>
                         <div class="single-wized-footer">
@@ -271,13 +259,11 @@
                             </h5>
                             <ul class="list">
                                 <li data-sal-delay="150" data-sal="slide-up" data-sal-duration="800"><a
-                                        href="event-list.html">Alumni Events and Engagement</a></li>
-                                <li data-sal-delay="450" data-sal="slide-up" data-sal-duration="800"><a
-                                        href="event-list.html">Alumni Success Stories</a></li>
+                                        href="{% url 'events' %}">Events</a></li>
                                 <li data-sal-delay="250" data-sal="slide-up" data-sal-duration="800"><a
-                                        href="become-mentor.html">Become a Mentor</a></li>
+                                        href="{% url 'become-mentor' %}">Become a Mentor</a></li>
                                 <li data-sal-delay="350" data-sal="slide-up" data-sal-duration="800"><a
-                                        href="contactus.html">Become a Partner</a></li>
+                                        href="{% url 'contact' %}">Become a Partner</a></li>
                             </ul>
                         </div>
                         <div class="single-wized-footer">
@@ -286,13 +272,11 @@
                             </h5>
                             <ul class="list">
                                 <li data-sal-delay="150" data-sal="slide-up" data-sal-duration="800"><a
-                                        href="contactus.html">Contact</a></li>
+                                        href="{% url 'contact' %}">Contact</a></li>
                                 <li data-sal-delay="150" data-sal="slide-up" data-sal-duration="800"><a
-                                        href="faq.html">FAQ</a></li>
+                                        href="{% url 'faq' %}">FAQ</a></li>
                                 <li data-sal-delay="250" data-sal="slide-up" data-sal-duration="800"><a href="#">Privacy
                                         Policy</a></li>
-                                <li data-sal-delay="350" data-sal="slide-up" data-sal-duration="800"><a href="#">Terms
-                                        of Use</a></li>
                             </ul>
                         </div>
                     </div>
